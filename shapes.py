@@ -162,4 +162,6 @@ for x in range(3):
     turtle.lt(90)
 turtle.end_fill()
 
+def make_a_house
+
 turtle.exitonclick()
