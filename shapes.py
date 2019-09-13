@@ -162,6 +162,30 @@ for x in range(3):
     turtle.lt(90)
 turtle.end_fill()
 
-def make_a_house
+turtle.penup()
+turtle.goto(250,-200)
+turtle.rt(60)
+turtle.pendown()
+
+def make_a_house():
+    turtle.color("cyan")
+    turtle.begin_fill()
+    for x in range(3):
+        turtle.fd(50)
+        turtle.lt(120)
+    turtle.end_fill()
+    turtle.lt(60)
+    turtle.color("medium purple")
+    turtle.begin_fill()
+    for x in range(3):
+        turtle.fd(50)
+        turtle.lt(90)
+    turtle.end_fill()
+
+make_a_house()
+turtle.penup()
+turtle.goto(180,-200)
+make_a_house()
 
 turtle.exitonclick()
+
