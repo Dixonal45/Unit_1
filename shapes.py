@@ -167,25 +167,38 @@ turtle.goto(250,-200)
 turtle.rt(60)
 turtle.pendown()
 
-def make_a_house():
-    turtle.color("cyan")
+def make_a_house(color, color2):
+    turtle.color(color)
     turtle.begin_fill()
     for x in range(3):
         turtle.fd(50)
         turtle.lt(120)
     turtle.end_fill()
     turtle.lt(60)
-    turtle.color("medium purple")
+    turtle.color(color2)
     turtle.begin_fill()
-    for x in range(3):
+    for y in range(3):
         turtle.fd(50)
         turtle.lt(90)
     turtle.end_fill()
 
-make_a_house()
-turtle.penup()
-turtle.goto(180,-200)
-make_a_house()
+
+def go_to(x, y):
+    turtle.penup()
+    turtle.goto(x, y)
+    turtle.pendown()
+
+
+make_a_house("cyan", "medium purple")
+go_to(180, -200)
+turtle.lt(30)
+make_a_house("indigo", "powder blue")
+go_to(110, -200)
+turtle.lt(30)
+make_a_house("hot pink", "yellow")
+go_to(35, -200)
+turtle.lt(30)
+make_a_house("green", "blue")
+
 
 turtle.exitonclick()
-
