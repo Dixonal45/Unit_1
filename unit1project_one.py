@@ -24,21 +24,18 @@ def go_to(x, y):
     turtle.pendown()
 
 
-# Makes a cyan filled octagon
+# The following lines draw octagons in new locations and colors
 go_to(-100, -100)
 make_an_octagon("cyan")
 
-# Makes a medium purple filled octagon in a new location
 go_to(-100, 100)
 make_an_octagon("medium purple")
 
-# Makes a lavender filled octagon in a new location
 go_to(100, 100)
 make_an_octagon("lavender")
 
-# Makes a dodger blue filled octagon in a new location
 go_to(100, -100)
 make_an_octagon("dodger blue")
 
-# Program stays on screen until user clicks on screen
+# The program stays on screen until the user clicks on screen
 turtle.exitonclick()
